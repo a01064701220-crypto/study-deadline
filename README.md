@@ -1,2 +1,43 @@
-# study-deadline
-An open-source task and deadline tracker designed to help students manage assignments, exams, and study schedules.
+# 📚Study Deadline
+
+> A simple open-source task and deadline tracker designed to help students manage assignments, exams, and study schedules.
+
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Prototype-blue.svg)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)
+
+## About The Project
+
+Students often manage assignments, exams, presentations, and study schedules across multiple platforms such as learning management systems, calendars, messaging apps, and personal notes.
+
+**Study Deadline** is a lightweight open-source web application designed to help students organize academic tasks in one place and quickly identify upcoming deadlines.
+
+The project focuses on providing a simple and accessible solution without requiring an account, server, or complex setup.
+
+## ✨ Key Features
+
+- 📚 **Task Management** — Add assignments, exams, presentations, and other academic tasks.
+- 📅 **Deadline Tracking** — Automatically calculate the number of days remaining until each deadline.
+- ✅ **Completion Tracking** — Mark completed tasks and keep track of remaining work.
+- 🔍 **Deadline Overview** — View upcoming tasks in deadline order to identify priorities quickly.
+
+## 🛠 Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Web Storage API (LocalStorage)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+You only need:
+
+- A modern web browser
+- Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/a01064701220-crypto/study-deadline.git
