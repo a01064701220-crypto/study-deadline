@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Study Deadline</title>
+
+  <meta
+    name="description"
+    content="A simple open-source deadline tracker for students."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="header">
+      <div>
+        <h1>📚 Study Deadline</h1>
+        <p>Keep track of assignments, exams, and academic deadlines.</p>
+      </div>
+    </header>
+
+
+    <section class="task-form-section">
+
+      <h2>Add a Task</h2>
+
+      <form id="task-form">
+
+        <div class="form-group">
+          <label for="title">Task</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="e.g. Biology report"
+            required
+          >
+        </div>
+
+
+        <div class="form-group">
+          <label for="course">Course</label>
+          <input
+            type="text"
+            id="course"
+            placeholder="e.g. Biology"
+          >
+        </div>
+
+
+        <div class="form-group">
+          <label for="type">Type</label>
+
+          <select id="type">
+            <option value="Assignment">Assignment</option>
+            <option value="Exam">Exam</option>
+            <option value="Presentation">Presentation</option>
+            <option value="Study">Study</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <label for="deadline">Deadline</label>
+
+          <input
+            type="date"
+            id="deadline"
+            required
+          >
+        </div>
+
+
+        <button type="submit" class="primary-button">
+          Add Task
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <section class="summary">
+
+      <div class="summary-card">
+        <span id="total-count">0</span>
+        <p>Total Tasks</p>
+      </div>
+
+      <div class="summary-card">
+        <span id="upcoming-count">0</span>
+        <p>Upcoming</p>
+      </div>
+
+      <div class="summary-card">
+        <span id="completed-count">0</span>
+        <p>Completed</p>
+      </div>
+
+    </section>
+
+
+    <section class="tasks-section">
+
+      <div class="section-header">
+        <h2>Upcoming Tasks</h2>
+      </div>
+
+      <div id="task-list"></div>
+
+      <div id="empty-state" class="empty-state">
+        <p>🎉 No tasks yet.</p>
+        <span>Add your first academic deadline above.</span>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>
+      Study Deadline · Open-source student productivity tool
+    </p>
+  </footer>
+
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
